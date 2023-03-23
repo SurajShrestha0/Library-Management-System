@@ -29,9 +29,11 @@
 /*-- Index-Page-Styling --*/
 /*body part as a background*/
 body {
+   
     font-family: 'Roboto', sans-serif;
     text-align: center;
-    background: url("../images/background.jpg");
+   /* background: url("../images/background.jpg");*/
+    background-color: #6d6e70;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -39,39 +41,51 @@ body {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
+    
 }
 
 /*header 1 part*/
 h1 {
     font-size: 45px;
-    font-weight: 500;
+   font-weight: 400;
+    
     letter-spacing: 4px;
-    margin: 60px 0;
-    color: #a4c93a;
+    
+    height: 60px;
+    color: #f8faf8;
 }
+
 /*container part left right*/
 .container {
     
+   
     width: 50%;
     margin:  auto;
+    margin-top: 2%;
     padding: 40px;
-    
+    height: 400px;
     background-color: rgba(116, 191, 68, 1);
     border: 4px ridge rgba(238, 238, 238, 0.13);
-    border-radius: 5px;
+    /*border-radius: 5px;*/
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
     -moz-box-shadow: 0 -5px 10px 1px rgba(16, 16, 16, 0.57);
     -webkit-box-shadow: 0 -5px 10px 1px rgba(16, 16, 16, 0.57);
     box-shadow: 0 -5px 10px 1px rgba(16, 16, 16, 0.57);
     
     border-bottom: none;
-    border-bottom-left-radius: initial;
-    border-bottom-right-radius: initial;
+    
     
 }
 /*login as sign*/
 .login {
     width: 45%;
+    
     float: left;
+    margin-top: -3%;
     text-align: left;
     padding-right: 40px;
 }
@@ -148,7 +162,7 @@ input[type="text"], input[type="password"] {
 
 /*--agileits--*/
 .send-button input[type="submit"]:hover {
-    background-color: #000;
+    background-color: #6d6e70;
     border: 1px solid #FFF;
     color: #FFF;
     transition:0.5s all;
@@ -169,31 +183,33 @@ input[type="text"], input[type="password"] {
 
 .register {
     width: 44%;
+    height: 450px;
+    margin-top: -3%;
     float: left;
-    border-left: 1px solid #DDD;
+    border-left: 1px solid #e9e9e9;
     padding-left: 40px;
     text-align: left;
 }
 
 .register p {
-    color: #CCC;
+    color: #913131;
     margin-bottom: 10px;
 }
 
 .register p a {
-    color: #CCC;
+    color: #632121;
 }
 
 .register p a:hover {
-    color: #FFF;
+    color: #741b1b;
 }
 
 .footer {
     text-align: center;
-    margin: 100px 20px 20px;
+    margin: 35px 20px 20px;
 }
 .footer p {
-    color: #CCC;
+    color: #FFFFFF;
     line-height: 25px;
     
     /*--agileits--*/
@@ -212,7 +228,7 @@ input[type="text"], input[type="password"] {
 
 @media screen and (max-width: 1920px) {
     h1 {
-        margin: 100px 0;
+        margin: 1000px 0;
     }
 }
 
@@ -230,12 +246,12 @@ input[type="text"], input[type="password"] {
 
 @media screen and (max-width: 1366px) {
     h1 {
-        margin: 50px 0;
+        margin: 1px 0;
     }
     .container {
         width: 57%;
     }
-   /*w1*/
+   
     /*--agileits--*/
 }
 
