@@ -1,4 +1,5 @@
 <?php
+//start or resume the session on the server-side
 session_start();
 /*Database port user password*/
 $dbservername = "localhost:3307";
