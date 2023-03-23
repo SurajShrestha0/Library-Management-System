@@ -2,7 +2,6 @@
 require('dbconn.php');
 ?>
 
-
 <!DOCTYPE html>
 <html>
 
@@ -112,15 +111,12 @@ if(strcasecmp($x,$p)==0 && !empty($u) && !empty($p))
   if($y=='Admin')
    header('location:admin/index.php');
   else
-  	header('location:student/index.php');
-        
+  	header('location:student/index.php');  
   }
 else 
 /* wrong alert message*/
  { echo "<script type='text/javascript'>alert('Failed to Login! Incorrect RollNo or Password')</script>";
 }
-   
-
 }
 /*checking the validity*/
 if(isset($_POST['signup']))
