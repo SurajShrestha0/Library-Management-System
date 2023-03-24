@@ -37,7 +37,7 @@ require('dbconn.php');
 		<div class="login">
 			<h2>Sign In</h2>
 			<form action="index.php" method="post">
-				<input type="text" Name="RollNo" placeholder="RollNo" required="">
+				<input type="text" Name="UserId" placeholder="UserId" required="">
 				<input type="password" Name="Password" placeholder="Password" required="">
 			
 			<!-- Send -->
@@ -59,7 +59,7 @@ require('dbconn.php');
 				<input type="text" Name="Email" placeholder="Email" required>
 				<input type="password" Name="Password" placeholder="Password" required>
 				<input type="text" Name="PhoneNumber" placeholder="Phone Number" required>
-				<input type="text" Name="RollNo" placeholder="Roll Number" required="">
+				<input type="text" Name="UserId" placeholder="Roll Number" required="">
 				
 				<select name="Category" id="Category">
 					<option value="GEN">General</option>
@@ -76,7 +76,7 @@ require('dbconn.php');
 			    </form>
 			</div>
 			<!-- continuing term part -->
-			<p>By continuing, you agree to LMS <a class="underline" href="terms.html">Terms</a></p>
+			
 			<div class="clear"></div>
 		</div>
 
@@ -85,7 +85,7 @@ require('dbconn.php');
 	</div>
 <!-- footer part -->
 	<div class="footer ">
-		<p> &copy; 2023 Library Member Teams, All Rights Reserved </a></p>
+		<p> &copy; 2022 Library Member Teams, All Rights Reserved </a></p>
 		
 	</div>
 
@@ -93,11 +93,11 @@ require('dbconn.php');
 /* place holder for signin*/
 /*checking the validity*/
 if(isset($_POST['signin']))
-{$u=$_POST['RollNo'];
+{$u=$_POST['UserId'];
  $p=$_POST['Password'];
  $c=$_POST['Category'];
  /*Select from user database query */
- $sql="select * from LMS.user where RollNo='$u'";
+ $sql="select * from LMS.user where UserId='$u'";
 
  $result = $conn->query($sql);
 $row = $result->fetch_assoc();
@@ -106,7 +106,7 @@ $x=$row['Password'];
 $y=$row['Type'];
 if(strcasecmp($x,$p)==0 && !empty($u) && !empty($p))
   {//echo "Login Successful";
-   $_SESSION['RollNo']=$u;
+   $_SESSION['UserId']=$u;
    
   /*redirect user to the appropriate index */
   if($y=='Admin')
@@ -116,7 +116,7 @@ if(strcasecmp($x,$p)==0 && !empty($u) && !empty($p))
   }
 else 
 /* wrong alert message*/
- { echo "<script type='text/javascript'>alert('Failed to Login! Incorrect RollNo or Password')</script>";
+ { echo "<script type='text/javascript'>alert('Failed to Login! Incorrect UserId or Password')</script>";
 }
 }
 /*checking the validity*/
@@ -126,11 +126,11 @@ if(isset($_POST['signup']))
 	$email=$_POST['Email'];
 	$password=$_POST['Password'];
 	$mobno=$_POST['PhoneNumber'];
-	$rollno=$_POST['RollNo'];
+	$rollno=$_POST['UserId'];
 	$category=$_POST['Category'];
 	$type='Student';
    /* Insert data filed*/
-	$sql="insert into LMS.user (Name,Type,Category,RollNo,EmailId,MobNo,Password) values ('$name','$type','$category','$rollno','$email','$mobno','$password')";
+	$sql="insert into LMS.user (Name,Type,Category,UserId,EmailId,MobNo,Password) values ('$name','$type','$category','$rollno','$email','$mobno','$password')";
 
 	if ($conn->query($sql) === TRUE) {
 		//Sucessful messsage
