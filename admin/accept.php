@@ -1,4 +1,4 @@
-<?.php
+<?php
 require('dbconn.php');
 //Retrieve the value of the "id1" parameter from the URL query string and assign variable 
 $bookid=$_GET['id1'];
