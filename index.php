@@ -30,7 +30,11 @@ require('dbconn.php');
 <!-- Body -->
 <body>
    <!-- Header 1 -->
-	<h1>LIBRARY MANAGEMENT SYSTEM</h1>
+	<h1 style="
+	margin-top: 10px;
+    margin-bottom: 10px;
+	"
+	 >LIBRARY MANAGEMENT SYSTEM</h1>
 
 	<div class="container">
       <!-- Login palce -->
