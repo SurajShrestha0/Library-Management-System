@@ -182,7 +182,6 @@ if ($_SESSION['UserId']) {
 <script src="scripts/common.js" type="text/javascript"></script>
 <!-- Custom JavaScript code -->
       
-      
     </body>
 
 </html>
