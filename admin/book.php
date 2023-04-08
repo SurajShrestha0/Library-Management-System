@@ -103,7 +103,6 @@ if ($_SESSION['UserId']) {
                                     else
                                     {
 
-                                    
                                     ?>
                         <table class="table" id = "tables">
                                   <thead>
@@ -116,7 +115,7 @@ if ($_SESSION['UserId']) {
                                   </thead>
                                   <tbody>
                                     <?php
-                            
+                 
                             //$result=$conn->query($sql);
                             while($row=$result->fetch_assoc())
                             {
