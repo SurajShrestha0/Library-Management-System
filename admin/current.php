@@ -158,11 +158,7 @@ if ($_SESSION['UserId']) {
             </div>
             <!--/.container-->
         </div>
-<div class="footer">
-            <div class="container">
-                <b class="copyright">&copy; 2018 Library Management System </b>All rights reserved.
-            </div>
-        </div>
+<?php include ('footer.php) ?>
         
                <!--/.wrapper-->
 <script src="scripts/jquery-1.9.1.min.js" type="text/javascript"></script>
