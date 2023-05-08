@@ -19,7 +19,6 @@ try {
     } else {
         throw new Exception("Error deleting user: " . $conn->error);
     }
-
     // Close database connection
     $conn->close();
 } catch (Exception $e) {
