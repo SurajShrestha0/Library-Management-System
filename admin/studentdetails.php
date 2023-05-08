@@ -132,7 +132,6 @@ if ($_SESSION['UserId']) {
         <script src="scripts/flot/jquery.flot.resize.js" type="text/javascript"></script>
         <script src="scripts/datatables/jquery.dataTables.js" type="text/javascript"></script>
         <script src="scripts/common.js" type="text/javascript"></script>
-      
     </body>
 </html>
 <?php }
