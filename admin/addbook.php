@@ -206,8 +206,8 @@ if(!empty($author3))
 echo "<script type='text/javascript'>alert('Success')</script>";
 }
 else
-{//echo $conn->error;
-    
+{
+    echo $conn->error; 
 // Display a error message using JavaScript
 echo "<script type='text/javascript'>alert('Error')</script>";
 }  
