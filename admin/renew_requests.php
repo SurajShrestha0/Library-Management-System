@@ -153,7 +153,6 @@ if ($_SESSION['UserId']) {
 
     </html>
 
-
 <?php } else {
     //echo access denied
     echo "<script type='text/javascript'>alert('Access Denied!!!')</script>";
