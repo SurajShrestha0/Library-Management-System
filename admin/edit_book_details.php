@@ -4,14 +4,11 @@ ob_start();
 //db file upload
 require('dbconn.php');
 ?>
-
 <?php
 if ($_SESSION['UserId']) {
 ?>
-
     <!DOCTYPE html>
     <html lang="en">
-
     <head>
         <!-- /* These are HTML tags that define the structure and styling of a webpage. */ -->
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
