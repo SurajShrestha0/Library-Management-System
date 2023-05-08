@@ -1,6 +1,5 @@
 <?php
 //database
-require('dbconn.php');
 
 // Check connection
 if ($conn->connect_error) {
