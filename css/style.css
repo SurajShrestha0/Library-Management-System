@@ -1,3 +1,4 @@
+/*LMS team*/
 /*-- Reset Code --*/
 
 	html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
@@ -41,6 +42,7 @@ body {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
+   /* overflow : hidden;*/
     
 }
 
@@ -50,6 +52,8 @@ h1 {
    font-weight: 400;
     
     letter-spacing: 4px;
+    
+   
     color: #f8faf8;
 }
 
@@ -78,10 +82,14 @@ h1 {
     
     
 }
+/*Choose Category*/
+#Category option:first-child {
+    font-weight: bold;
+}
 /*login as sign*/
 .login {
     width: 45%;
-    
+  
     float: left;
     margin-top: -3%;
     text-align: left;
@@ -107,8 +115,8 @@ h1 {
 h2 {
     font-size: 35px;
     text-align: left;
-    color: #FFF;
-    font-weight: 100;
+    color: #fff;
+    font-weight: 350;
     margin-bottom: 20px;
 }
 
@@ -126,6 +134,7 @@ input[type="text"], input[type="password"] {
     width: 93.4%;
     margin-bottom: 20px;
     padding: 10px;
+   
     float: left;
     background-color: transparent;
     border: none;
@@ -138,14 +147,15 @@ input[type="text"], input[type="password"] {
 .send-button {
     margin-bottom: 20px;
 }
-
+/**button**/
 .send-button input[type="submit"] {
     width: 60%;
     padding: 10px 0;
     font-size: 16px;
     font-weight: 100;
-    background-color: transparent;
-    color: #CCC;
+    background-color: #6d6e70bf;
+    color: #fff;
+    border-radius: 8px;
     border: 1px solid rgba(238, 238, 238, 0.41);
     border-width: thin;
     cursor: pointer;
@@ -160,7 +170,7 @@ input[type="text"], input[type="password"] {
 
 /*--agileits--*/
 .send-button input[type="submit"]:hover {
-    background-color: #6d6e70;
+    background-color: #4e4f50bf;
     border: 1px solid #FFF;
     color: #FFF;
     transition:0.5s all;
@@ -204,7 +214,7 @@ input[type="text"], input[type="password"] {
 
 .footer {
     text-align: center;
-    margin: 35px 20px 20px;
+    margin: 20px 2px 2px;
 }
 .footer p {
     color: #FFFFFF;
@@ -220,7 +230,8 @@ input[type="text"], input[type="password"] {
     color: #FFF;
 }
 
-/*-- Index-Page-Styling --*/
+
+/*--- Responsive Code ---*/
 
 
 
@@ -307,6 +318,7 @@ input[type="text"], input[type="password"] {
 @media screen and (max-width: 768px) {
     .container {
         width: 85%;
+        height: auto;
     }
     .register p {
         font-size: 13.8px;
@@ -320,6 +332,7 @@ input[type="text"], input[type="password"] {
     .container {
         width: 87%;
         padding: 35px;
+        height: auto;
     }
     .login {
         padding-right: 34px;
