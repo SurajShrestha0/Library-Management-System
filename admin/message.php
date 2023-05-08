@@ -160,7 +160,6 @@ else
     //error message
 echo "<script type='text/javascript'>alert('Error')</script>";
 }
-    
 }
 ?><!--body end -->
     </body>
