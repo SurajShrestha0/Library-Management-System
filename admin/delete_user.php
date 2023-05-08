@@ -17,7 +17,6 @@ $rno = $_GET['id'];
 // Get user information from database
 $sql = "SELECT * FROM LMS.user WHERE UserId='$rno'";
 $result = $conn->query($sql);
-
 if ($result->num_rows > 0) {
     // Delete user from database
     $sql = "DELETE FROM LMS.user WHERE UserId='$rno'";
